@@ -1,0 +1,31 @@
+{
+  "name": "vue-phone-input",
+  "version": "0.0.1",
+  "private": false,
+  "description": "Internation phone number input Vue component.",
+  "main": "index.js",
+  "scripts": {
+    "serve": "vue serve src/PhoneInput.vue",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "files": [
+    "dist/*"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mihailomat/vue-phone-input.git"
+  },
+  "author": "Mihailo Matijevic (mihailomat)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mihailomat/vue-phone-input/issues"
+  },
+  "homepage": "https://github.com/mihailomat/vue-phone-input#readme",
+  "dependencies": {
+    "vue": "^2.6.12"
+  },
+  "devDependencies": {
+    "@vue/cli": "^4.5.11",
+    "@vue/cli-service-global": "^4.5.11"
+  }
+}
