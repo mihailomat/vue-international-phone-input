@@ -1,11 +1,11 @@
-import phoneInput from '@/PhoneInput.vue';
+import phoneInput from '@/InternationalPhoneInput.vue';
 export { phoneInput };
 
 export default /*#__PURE__*/ (() => {
   const installable = phoneInput;
 
   installable.install = (Vue) => {
-    Vue.component('VuePhoneInput', installable);
+    Vue.component('InternationalPhoneInput', installable);
   };
   return installable;
 })();

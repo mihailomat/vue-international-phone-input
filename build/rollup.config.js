@@ -66,7 +66,7 @@ if (!argv.format || argv.format === 'es') {
     input: 'src/entry.esm.js',
     external,
     output: {
-      file: 'dist/vue-phone-input.esm.js',
+      file: 'dist/vue-international-phone-input.esm.js',
       format: 'esm',
       exports: 'named',
     },
@@ -98,7 +98,7 @@ if (!argv.format || argv.format === 'cjs') {
     external,
     output: {
       compact: true,
-      file: 'dist/vue-phone-input.ssr.js',
+      file: 'dist/vue-international-phone-input.ssr.js',
       format: 'cjs',
       name: 'VuePhoneInput',
       exports: 'auto',
@@ -128,7 +128,7 @@ if (!argv.format || argv.format === 'iife') {
     external,
     output: {
       compact: true,
-      file: 'dist/vue-phone-input.min.js',
+      file: 'dist/vue-international-phone-input.min.js',
       format: 'iife',
       name: 'VuePhoneInput',
       exports: 'auto',

@@ -1,15 +1,15 @@
 {
-  "name": "vue-phone-input",
-  "version": "0.0.1",
+  "name": "vue-international-phone-input",
+  "version": "0.0.2",
   "private": false,
   "description": "Internation phone number input Vue component.",
-  "main": "dist/vue-phone-input.ssr.js",
-  "browser": "dist/vue-phone-input.esm.js",
-  "module": "dist/vue-phone-input.esm.js",
-  "unpkg": "dist/vue-phone-input.min.js",
+  "main": "dist/vue-international-phone-input.ssr.js",
+  "browser": "dist/vue-international-phone-input.esm.js",
+  "module": "dist/vue-international-phone-input.esm.js",
+  "unpkg": "dist/vue-international-phone-input.min.js",
   "sideEffects": false,
   "scripts": {
-    "serve": "vue serve src/PhoneInput.vue",
+    "serve": "vue serve src/InternationalPhoneInput.vue",
     "build": "cross-env NODE_ENV=production rollup --config build/rollup.config.js",
     "build:ssr": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format cjs",
     "build:es": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format es",
@@ -22,14 +22,14 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mihailomat/vue-phone-input.git"
+    "url": "git+https://github.com/mihailomat/vue-international-phone-input.git"
   },
   "author": "Mihailo Matijevic (mihailomat)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mihailomat/vue-phone-input/issues"
+    "url": "https://github.com/mihailomat/vue-international-phone-input/issues"
   },
-  "homepage": "https://github.com/mihailomat/vue-phone-input#readme",
+  "homepage": "https://github.com/mihailomat/vue-international-phone-input#readme",
   "dependencies": {},
   "devDependencies": {
     "@vue/cli": "^4.5.11",

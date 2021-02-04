@@ -6,7 +6,7 @@
 </template>
 <script>
 export default {
-  name: 'PhoneInput',
+  name: 'InternationalPhoneInput',
   props: {
     label: {
       type: String,
