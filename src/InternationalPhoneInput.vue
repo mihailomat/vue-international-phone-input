@@ -5,6 +5,8 @@
   </label>
 </template>
 <script>
+import { AsYouType } from 'libphonenumber-js';
+
 export default {
   name: 'InternationalPhoneInput',
   props: {
@@ -21,14 +23,14 @@ export default {
       default: '',
     },
   },
-  data() {
-    return {
-      internalModel: this.value,
-    };
-  },
-  watch: {
-    internalModel(newValue) {
-      this.$emit('input', newValue);
+  computed: {
+    internalModel: {
+      get() {
+        return this.value;
+      },
+      set(value) {
+        this.$emit('input', new AsYouType().input(value));
+      },
     },
   },
 };
