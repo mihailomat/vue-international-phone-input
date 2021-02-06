@@ -1,6 +1,6 @@
 {
   "name": "vue-international-phone-input",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "private": false,
   "description": "Internation phone number input Vue component.",
   "main": "dist/vue-international-phone-input.ssr.js",
@@ -9,7 +9,7 @@
   "unpkg": "dist/vue-international-phone-input.min.js",
   "sideEffects": false,
   "scripts": {
-    "serve": "vue serve src/InternationalPhoneInput.vue",
+    "serve": "vue serve src/ExamplesApp.vue",
     "build": "cross-env NODE_ENV=production rollup --config build/rollup.config.js",
     "build:ssr": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format cjs",
     "build:es": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format es",
