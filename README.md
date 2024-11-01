@@ -12,7 +12,7 @@ or npm
 
 `npm i --save vue-international-phone-input`
 
-Import the component similar to this example:
+Import the component similar to this example using composition API:
 
 ```vue
 <template>
@@ -20,23 +20,16 @@ Import the component similar to this example:
     <InternationalPhoneInput
       v-model="phoneNumber"
       label="Phone number"
-      placeholder="enter phone number"
+      placeholder="Enter phone number"
     />
   </div>
 </template>
 
-<script>
-import InternationalPhoneInput from 'vue-international-phone-input';
-export default {
-  components: {
-    InternationalPhoneInput,
-    // ....
-  },
-  data: () => ({
-    phoneNumber: '',
-    //...
-  }),
-};
+<script setup>
+  import { ref } from 'vue';
+  import InternationalPhoneInput from 'vue-international-phone-input';
+
+  const phoneNumber = ref('');
 </script>
 ```
 

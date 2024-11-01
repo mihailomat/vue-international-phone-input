@@ -4,13 +4,14 @@
     <input type="tel" v-model="internalModel" :placeholder="placeholder" />
   </label>
 </template>
+
 <script>
 import { AsYouType } from 'libphonenumber-js';
 
 export default {
   name: 'InternationalPhoneInput',
   props: {
-    value: {
+    modelValue: {
       type: String,
       default: '',
     },
@@ -23,13 +24,14 @@ export default {
       default: '',
     },
   },
+  emits: ['update:modelValue'],
   computed: {
     internalModel: {
       get() {
-        return this.value;
+        return this.modelValue;
       },
       set(value) {
-        this.$emit('input', new AsYouType().input(value));
+        this.$emit('update:modelValue', new AsYouType().input(value));
       },
     },
   },
