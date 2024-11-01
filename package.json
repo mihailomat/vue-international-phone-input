@@ -3,17 +3,12 @@
   "version": "0.0.3",
   "private": false,
   "description": "Internation phone number input Vue component.",
-  "main": "dist/vue-international-phone-input.ssr.js",
-  "browser": "dist/vue-international-phone-input.esm.js",
-  "module": "dist/vue-international-phone-input.esm.js",
-  "unpkg": "dist/vue-international-phone-input.min.js",
+  "type": "module",
+  "main": "dist/vue-international-phone-input.es.js",
   "sideEffects": false,
   "scripts": {
-    "serve": "vue serve src/ExamplesApp.vue",
-    "build": "cross-env NODE_ENV=production rollup --config build/rollup.config.js",
-    "build:ssr": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format cjs",
-    "build:es": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format es",
-    "build:unpkg": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format iife",
+    "serve": "vite src/ExamplesApp.vue",
+    "build": "vite build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "files": [
@@ -31,31 +26,17 @@
   },
   "homepage": "https://github.com/mihailomat/vue-international-phone-input#readme",
   "dependencies": {
-    "libphonenumber-js": "^1.9.9"
+    "vue": "3.5.12",
+    "libphonenumber-js": "1.9.9"
   },
   "devDependencies": {
-    "@babel/core": "^7.12.10",
-    "@babel/preset-env": "^7.12.11",
-    "@rollup/plugin-alias": "^3.1.1",
-    "@rollup/plugin-babel": "^5.2.2",
-    "@rollup/plugin-commonjs": "^17.0.0",
-    "@rollup/plugin-node-resolve": "^11.0.1",
-    "@rollup/plugin-replace": "^2.3.4",
-    "@vue/cli": "^4.5.11",
-    "@vue/cli-plugin-babel": "^4.5.10",
-    "@vue/cli-service-global": "^4.5.11",
-    "cross-env": "^7.0.3",
-    "minimist": "^1.2.5",
-    "rollup": "^2.36.1",
-    "rollup-plugin-terser": "^7.0.2",
-    "rollup-plugin-vue": "^5.1.9",
-    "vue": "^2.6.12",
-    "vue-template-compiler": "^2.6.12"
+    "@vitejs/plugin-vue": "5.1.4",
+    "vite": "5.4.10"
   },
   "peerDependencies": {
-    "vue": "^2.6.12"
+    "vue": "^3.0.0"
   },
   "engines": {
-    "node": ">=12"
+    "node": ">=18"
   }
 }
