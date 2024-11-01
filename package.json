@@ -26,12 +26,12 @@
   },
   "homepage": "https://github.com/mihailomat/vue-international-phone-input#readme",
   "dependencies": {
-    "vue": "3.5.12",
     "libphonenumber-js": "1.9.9"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "5.1.4",
-    "vite": "5.4.10"
+    "vue": "3.5.12",
+    "vite": "5.4.10",
+    "@vitejs/plugin-vue": "5.1.4"
   },
   "peerDependencies": {
     "vue": "^3.0.0"
